@@ -4,7 +4,6 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "": "echo \"Error: no test specified\" && exit 1",
         "test": "wdio run wdio.conf.js",
         "report": "allure open allure-report"
     },
