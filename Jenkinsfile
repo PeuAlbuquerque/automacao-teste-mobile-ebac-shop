@@ -12,6 +12,13 @@ pipeline {
                 bat 'npm install'
             }
         }
+        stage('Credenciais do browserstack') {
+            steps {
+                browserstack('d267f0f5-9fe2-4abc-b2a0-09a9ae5e9bdd') {
+    // some block
+}
+            }
+        }
         stage('Executar testes') {
             steps {
                 bat 'npm run test'
@@ -19,3 +26,4 @@ pipeline {
         }
     }
 }
+
